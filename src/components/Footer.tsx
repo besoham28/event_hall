@@ -1,4 +1,4 @@
-import { Heart, Facebook, Instagram, Youtube, Twitter } from "lucide-react";
+import { Facebook, Instagram, Youtube, Twitter } from "lucide-react";
 
 const Footer = () => (
   <footer className="bg-royal text-cream/80">
@@ -55,12 +55,9 @@ const Footer = () => (
     </div>
 
     <div className="border-t border-gold/10 py-6">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="font-body text-sm text-cream/50">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
+        <p className="font-body text-sm text-cream/50 text-center">
           © 2026 Mangal Karyalay. All rights reserved.
-        </p>
-        <p className="font-body text-sm text-cream/50 flex items-center gap-1">
-          Made with <Heart size={14} className="text-gold" /> for unforgettable celebrations
         </p>
       </div>
     </div>
