@@ -3,7 +3,7 @@ import { Heart, Facebook, Instagram, Youtube, Twitter } from "lucide-react";
 const Footer = () => (
   <footer className="bg-royal text-cream/80">
     <div className="container mx-auto px-4 py-16">
-      <div className="grid md:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
         <div className="md:col-span-2">
           <h3 className="font-display text-3xl font-bold text-gold mb-2">Mangal Karyalay</h3>
           <p className="text-[10px] uppercase tracking-[0.3em] text-gold-light/60 font-body mb-4">
@@ -13,7 +13,7 @@ const Footer = () => (
             Creating unforgettable celebrations for over 25 years. Your dream event deserves
             a venue that matches your vision — and exceeds your expectations.
           </p>
-          <div className="flex gap-4 mt-8">
+          <div className="flex flex-wrap gap-3 mt-8">
             {[Facebook, Instagram, Youtube, Twitter].map((Icon, i) => (
               <a
                 key={i}

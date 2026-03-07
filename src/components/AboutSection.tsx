@@ -67,7 +67,7 @@ const AboutSection = () => {
           <div className="about-content">
             <div className="section-header">
               <p className="section-subtitle mb-3 text-lg md:text-xl font-bold">About Mangal Karyalay</p>
-              <h2 className="section-title mb-6 text-5xl md:text-6xl lg:text-7xl font-bold whitespace-nowrap">A Legacy of Grandeur</h2>
+              <h2 className="section-title mb-6 text-5xl md:text-6xl lg:text-7xl font-bold">A Legacy of Grandeur</h2>
             </div>
             <div className="gold-divider !mx-0 mb-8" />
             <p className="text-muted-foreground font-body leading-relaxed mb-6">

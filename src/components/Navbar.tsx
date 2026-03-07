@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="w-full px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 flex items-center justify-between">
         <a href="#home" className="flex flex-col">
-          <span className="font-display text-xl sm:text-2xl md:text-3xl font-bold text-gold tracking-wide whitespace-nowrap">
+          <span className="font-display text-xl sm:text-2xl font-bold text-gold tracking-wide truncate max-w-[150px] sm:max-w-none">
             Mangal Karyalay
           </span>
           <span className="text-[10px] uppercase tracking-[0.3em] text-gold-light/80 font-body">
