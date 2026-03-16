@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Twitter } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 const Footer = () => (
   <footer className="bg-royal text-cream/80">
@@ -29,18 +29,6 @@ const Footer = () => (
               className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-royal transition-all duration-300"
             >
               <Instagram size={22} />
-            </a>
-            <a
-              href="#"
-              className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-royal transition-all duration-300"
-            >
-              <Youtube size={22} />
-            </a>
-            <a
-              href="#"
-              className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-royal transition-all duration-300"
-            >
-              <Twitter size={22} />
             </a>
           </div>
         </div>

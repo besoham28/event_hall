@@ -138,8 +138,13 @@ const ContactSection = () => {
                   type="tel"
                   placeholder="Phone Number *"
                   required
+                  pattern="[0-9]*"
+                  inputMode="numeric"
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/\D/g, "");
+                    setFormData({ ...formData, phone: value });
+                  }}
                   className={inputClasses}
                 />
               </div>
