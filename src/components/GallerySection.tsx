@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpg";
+const hero1 = "https://lh3.googleusercontent.com/gps-cs-s/AHVAweq4SRh4A5G1dSQ3AjqBw-9C1Z5y7FE0nNLdHbIdPAWkXhC6Qkxk1ccBY-aP--eSqLV_7LKa3hKF0ASGIy7TTx5--8NSoJ_RkRStMiygL9xBU3zOmaelHKkvn-PUaEyGdRaATTs=w1600-h900-k-no";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
@@ -11,19 +11,24 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
+import structureFront from "@/assets/structure-front.jpg";
+import structurePerspective from "@/assets/structure-perspective.jpg";
+import structureSide from "@/assets/structure-side.jpg";
+import floorPlan from "@/assets/floor-plan.jpg";
+import sitePlan from "@/assets/site-plan.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
+  { src: structureFront, label: "Main Entrance & Façade" },
+  { src: structurePerspective, label: "Grand Architectural View" },
+  { src: structureSide, label: "Hall Exterior Perspective" },
+  { src: sitePlan, label: "Comprehensive Site Layout" },
+  { src: floorPlan, label: "Second Floor Planning" },
+  { src: hero2, label: "Wedding Stage & Interiors" },
   { src: hero1, label: "Grand Banquet Hall" },
-  { src: hero2, label: "Wedding Stage" },
-  { src: hero3, label: "Garden Venue" },
-  { src: gallery1, label: "Dining Setup" },
   { src: gallery2, label: "Mandap Decoration" },
-  { src: gallery3, label: "Venue Entrance" },
-  { src: gallery4, label: "Reception Party" },
-  { src: gallery5, label: "Engagement Stage" },
-  { src: gallery6, label: "Guest Room" },
+  { src: gallery3, label: "Venue Entrance Details" },
 ];
 
 const GallerySection = () => {
@@ -69,7 +74,7 @@ const GallerySection = () => {
           <p className="max-w-3xl mx-auto text-muted-foreground font-body leading-relaxed">
             Step into our world of elegance and grandeur. Our gallery showcases the 
             stunning transformations, architectural beauty, and heartfelt moments that 
-            define the Mangal Karyalay experience.
+            define the Sukhrup Garden experience.
           </p>
         </div>
 

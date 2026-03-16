@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Award, Heart, Users, Calendar } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpg";
+const hero1 = "https://lh3.googleusercontent.com/gps-cs-s/AHVAweq4SRh4A5G1dSQ3AjqBw-9C1Z5y7FE0nNLdHbIdPAWkXhC6Qkxk1ccBY-aP--eSqLV_7LKa3hKF0ASGIy7TTx5--8NSoJ_RkRStMiygL9xBU3zOmaelHKkvn-PUaEyGdRaATTs=w1600-h900-k-no";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,12 +66,12 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="about-content">
             <div className="section-header">
-              <p className="section-subtitle mb-3 text-lg md:text-xl font-bold">About Mangal Karyalay</p>
+              <p className="section-subtitle mb-3 text-lg md:text-xl font-bold">About Sukhrup Garden</p>
               <h2 className="section-title mb-6 text-5xl md:text-6xl lg:text-7xl font-bold">A Legacy of Grandeur</h2>
             </div>
             <div className="gold-divider !mx-0 mb-8" />
             <p className="text-muted-foreground font-body leading-relaxed mb-6">
-              Founded on the principles of hospitality and heritage, Mangal Karyalay has stood as a 
+              Founded on the principles of hospitality and heritage, Sukhrup Garden has stood as a 
               beacon of celebration for over 25 years. We don't just provide a venue; we provide a 
               canvas where your most cherished dreams are painted with strokes of elegance and tradition. 
               Our legacy is built on thousands of successful stories and a reputation for unmatched 
@@ -93,7 +93,7 @@ const AboutSection = () => {
           <div className="about-image relative">
             <img
               src={hero1}
-              alt="Mangal Karyalay Grand Hall"
+              alt="Sukhrup Garden Grand Hall"
               className="w-full h-[300px] md:h-[500px] object-cover shadow-[var(--shadow-elegant)]"
             />
             <div className="absolute -bottom-6 -left-6 w-48 h-48 border-2 border-gold/30 hidden lg:block" />

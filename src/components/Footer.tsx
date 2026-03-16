@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="container mx-auto px-4 py-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
         <div className="md:col-span-2">
-          <h3 className="font-display text-3xl font-bold text-gold mb-2">Mangal Karyalay</h3>
+          <h3 className="font-display text-3xl font-bold text-gold mb-2">Sukhrup Garden</h3>
           <p className="text-[10px] uppercase tracking-[0.3em] text-gold-light/60 font-body mb-4">
             Premium Wedding Venue
           </p>
@@ -14,15 +14,34 @@ const Footer = () => (
             a venue that matches your vision — and exceeds your expectations.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            {[Facebook, Instagram, Youtube, Twitter].map((Icon, i) => (
-              <a
-                key={i}
-                href="#"
-                className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-royal transition-all duration-300"
-              >
-                <Icon size={22} />
-              </a>
-            ))}
+            <a
+              href="https://www.facebook.com/share/17Bqq55zPE/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-royal transition-all duration-300"
+            >
+              <Facebook size={22} />
+            </a>
+            <a
+              href="https://www.instagram.com/sukhrupgarden?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-royal transition-all duration-300"
+            >
+              <Instagram size={22} />
+            </a>
+            <a
+              href="#"
+              className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-royal transition-all duration-300"
+            >
+              <Youtube size={22} />
+            </a>
+            <a
+              href="#"
+              className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-royal transition-all duration-300"
+            >
+              <Twitter size={22} />
+            </a>
           </div>
         </div>
 
@@ -45,10 +64,10 @@ const Footer = () => (
         <div>
           <h4 className="font-display text-lg font-semibold text-gold mb-4">Contact Info</h4>
           <ul className="space-y-3 font-body text-base text-cream/60">
-            <li>123, Shivaji Nagar, Pune</li>
-            <li>Maharashtra 411001</li>
-            <li>+91 98765 43210</li>
-            <li>info@mangalkaryalay.com</li>
+            <li>Haripur Sangli Road, Haripur</li>
+            <li>Sangli, Maharashtra 416415</li>
+            <li>+91 73049 99009</li>
+            <li>info@sukhrupgarden.com</li>
           </ul>
         </div>
       </div>
@@ -57,7 +76,7 @@ const Footer = () => (
     <div className="border-t border-gold/10 py-6">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
         <p className="font-body text-sm text-cream/50 text-center">
-          © 2026 Mangal Karyalay. All rights reserved.
+          © 2026 Sukhrup Garden. All rights reserved.
         </p>
       </div>
     </div>

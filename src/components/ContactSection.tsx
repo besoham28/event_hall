@@ -31,9 +31,9 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Format the message for WhatsApp and Email
-    const messageText = `*New Enquiry from Mangal Karyalay Website*%0A%0A` +
+    const messageText = `*New Enquiry from Sukhrup Garden Website*%0A%0A` +
       `*Name:* ${formData.name}%0A` +
       `*Phone:* ${formData.phone}%0A` +
       `*Email:* ${formData.email || "Not provided"}%0A` +
@@ -41,12 +41,12 @@ const ContactSection = () => {
       `*Event Date:* ${formData.date || "Not set"}%0A` +
       `*Message:* ${formData.message || "No additional message"}`;
 
-    const phoneNumber = "919876543210"; // Venue's WhatsApp number
-    const emailAddress = "info@mangalkaryalay.com";
-    
+    const phoneNumber = "917304999009"; // Venue's WhatsApp number
+    const emailAddress = "info@sukhrupgarden.com";
+
     // Primary action: Redirect to WhatsApp
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${messageText}`;
-    
+
     // Backup: Email fall-through if they prefer
     const subject = `New Event Inquiry - ${formData.name}`;
     const body = messageText.replace(/%0A/g, "\n").replace(/\*/g, "");
@@ -54,7 +54,7 @@ const ContactSection = () => {
 
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, "_blank");
-    
+
     alert("Inquiry prepared! Opening WhatsApp to send your details. You can also contact us via email at " + emailAddress);
     setFormData({ name: "", phone: "", email: "", event: "", date: "", message: "" });
   };
@@ -84,9 +84,9 @@ const ContactSection = () => {
 
             <div className="space-y-6">
               {[
-                { icon: MapPin, label: "Address", value: "123, Shivaji Nagar, Near City Center, Pune, Maharashtra 411001" },
-                { icon: Phone, label: "Phone", value: "+91 98765 43210 / +91 98765 43211" },
-                { icon: Mail, label: "Email", value: "info@mangalkaryalay.com" },
+                { icon: MapPin, label: "Address", value: "In Front Of Bageti Ganapati Mandir, Haripur Sangli Road, Haripur, Sangli, Maharashtra 416415" },
+                { icon: Phone, label: "Phone", value: "+91 73049 99009" },
+                { icon: Mail, label: "Email", value: "info@sukhrupgarden.com" },
                 { icon: Clock, label: "Office Hours", value: "Mon - Sun: 9:00 AM - 9:00 PM" },
               ].map((item) => (
                 <div key={item.label} className="flex gap-4 items-start">
@@ -106,20 +106,20 @@ const ContactSection = () => {
             {/* Map */}
             <div className="mt-8 h-52 bg-muted border border-border overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.204!2d73.856!3d18.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMxJzEyLjAiTiA3M8KwNTEnMjEuNiJF!5e0!3m2!1sen!2sin!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.555901974735!2d74.54247247492194!3d16.848373483949786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc10fb1df56b255%3A0xecdb1d9a30e35c73!2sSukhrup%20Garden%20%26%20Multipurpose%20Hall!5e0!3m2!1sen!2sin!4v1773654624996!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                title="Mangal Karyalay Location"
+                title="Sukhrup Garden & Multipurpose Hall Location"
               />
             </div>
           </div>
 
           <div className="contact-form bg-card border border-gold/10 p-8 shadow-[var(--shadow-elegant)] relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 blur-3xl rounded-full -mr-16 -mt-16" />
-            
+
             <h3 className="font-display text-2xl font-semibold text-foreground mb-8 relative z-10">
               Send a Message
             </h3>

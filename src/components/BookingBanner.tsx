@@ -39,11 +39,11 @@ const BookingBanner = () => {
             Book Now
           </a>
           <a
-            href="tel:+919876543210"
+            href="tel:+917304999009"
             className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-royal text-royal font-body font-medium text-sm uppercase tracking-[0.15em] transition-all duration-300 hover:bg-royal hover:text-cream"
           >
             <Phone size={16} />
-            +91 98765 43210
+            +91 73049 99009
           </a>
         </div>
       </div>

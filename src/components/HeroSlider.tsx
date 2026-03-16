@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import gsap from "gsap";
-import hero1 from "@/assets/hero-1.jpg";
+const hero1 = "https://lh3.googleusercontent.com/gps-cs-s/AHVAweq4SRh4A5G1dSQ3AjqBw-9C1Z5y7FE0nNLdHbIdPAWkXhC6Qkxk1ccBY-aP--eSqLV_7LKa3hKF0ASGIy7TTx5--8NSoJ_RkRStMiygL9xBU3zOmaelHKkvn-PUaEyGdRaATTs=w1600-h900-k-no";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
 
@@ -9,7 +9,7 @@ const slides = [
   {
     image: hero1,
     subtitle: "Welcome to",
-    title: "Mangal Karyalay",
+    title: "Sukhrup Garden",
     description: "Where every celebration becomes an unforgettable experience",
   },
   {

@@ -48,7 +48,7 @@ const FacilitiesSection = () => {
           <h2 className="section-title mb-6 text-5xl md:text-6xl lg:text-7xl font-bold">Our Facilities</h2>
           <div className="gold-divider mb-10" />
           <p className="max-w-3xl mx-auto text-muted-foreground font-body leading-relaxed">
-            Experience the perfect blend of tradition and modernity. At Mangal Karyalay, 
+            Experience the perfect blend of tradition and modernity. At Sukhrup Garden, 
             we provide state-of-the-art infrastructure designed to host grand celebrations 
             with absolute comfort and royal sophistication.
           </p>

@@ -10,8 +10,8 @@ const WhatsAppFloating = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const phoneNumber = "919876543210"; 
-  const message = "Hello! I'm interested in booking Mangal Karyalay for an event. Can you please provide more details?";
+  const phoneNumber = "917304999009"; 
+  const message = "Hello! I'm interested in booking Sukhrup Garden for an event. Can you please provide more details?";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
