@@ -1,12 +1,12 @@
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const Footer = () => (
   <footer className="bg-royal text-cream/80">
     <div className="container mx-auto px-4 py-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
         <div className="md:col-span-2">
-          <h3 className="font-display text-3xl font-bold text-gold mb-2">Sukhrup Garden</h3>
-          <p className="text-[10px] uppercase tracking-[0.3em] text-gold-light/60 font-body mb-4">
+          <h3 className="font-display text-3xl font-bold !text-white mb-2">Sukhrup Garden</h3>
+          <p className="text-[10px] uppercase tracking-[0.3em] !text-white/80 font-body mb-4">
             Premium Wedding Venue
           </p>
           <p className="font-body text-base leading-relaxed text-cream/70 max-w-md">
@@ -29,6 +29,14 @@ const Footer = () => (
               className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-royal transition-all duration-300"
             >
               <Instagram size={22} />
+            </a>
+            <a
+              href="https://wa.me/917304999009"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-[#25D366] hover:border-[#25D366] hover:text-white transition-all duration-300"
+            >
+              <MessageCircle size={22} />
             </a>
           </div>
         </div>

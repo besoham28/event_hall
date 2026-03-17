@@ -82,13 +82,13 @@ const HeroSlider = () => {
 
       <div className="absolute inset-0 flex items-center justify-center">
         <div ref={textRef} className="text-center px-4 max-w-4xl">
-          <p className="text-gold-light text-sm md:text-base uppercase tracking-[0.4em] font-body mb-4">
+          <p className="!text-white text-sm md:text-base uppercase tracking-[0.4em] font-body mb-4">
             {slides[current].subtitle}
           </p>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-cream mb-6 leading-tight">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold !text-white mb-6 leading-tight">
             {slides[current].title}
           </h1>
-          <p className="text-cream/80 font-body text-sm sm:text-base md:text-lg mb-10 max-w-2xl mx-auto">
+          <p className="!text-white/80 font-body text-sm sm:text-base md:text-lg mb-10 max-w-2xl mx-auto">
             {slides[current].description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

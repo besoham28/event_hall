@@ -23,18 +23,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? "bg-royal/95 backdrop-blur-md shadow-lg py-3"
           : "bg-transparent py-5"
-      }`}
+        }`}
     >
       <div className="w-full px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 flex items-center justify-between">
         <a href="#home" className="flex flex-col">
-          <span className="font-display text-xl sm:text-2xl font-bold text-gold tracking-wide truncate max-w-[150px] sm:max-w-none">
+          <span className="font-display text-xl sm:text-2xl font-bold !text-white tracking-wide truncate max-w-[150px] sm:max-w-none">
             Sukhrup Garden
           </span>
-          <span className="text-[10px] uppercase tracking-[0.3em] text-gold-light/80 font-body">
+          <span className="text-[10px] uppercase tracking-[0.3em] !text-white/80 font-body">
             Premium Wedding Venue
           </span>
         </a>
@@ -61,11 +60,10 @@ const Navbar = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`lg:hidden p-2 rounded-full transition-all duration-300 ${
-            scrolled 
-              ? "text-white hover:text-gold" 
+          className={`lg:hidden p-2 rounded-full transition-all duration-300 ${scrolled
+              ? "text-white hover:text-gold"
               : "text-royal bg-gold/80 backdrop-blur-md hover:bg-gold" // Enhanced visibility for light backgrounds
-          }`}
+            }`}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
